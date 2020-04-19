@@ -1,7 +1,7 @@
 # tacotron-2(tensorflow) + wavernn(pytorch) chinese TTS:  
   
   
-python37，biaobei chinese dataset，tacotron2 support chinese pinyin or chinese phone + rhythm training(default is phone + rhythm)，edit [symbols.py](./tacotron2_wavernn/tacotron/utils/symbols.py) and [text.py](./tacotron2_wavernn/tacotron/utils/text.py)：
+python37，biaobei chinese dataset，tacotron2 support chinese pinyin or chinese phone + rhythm training(default is phone + rhythm)，edit [symbols.py](./tacotron/utils/symbols.py) and [text.py](./tacotron/utils/text.py)：
   
 pinyin：  
 	000001,ka2 er2 pu3 pei2 wai4 sun1 wan2 hua2 ti1  
