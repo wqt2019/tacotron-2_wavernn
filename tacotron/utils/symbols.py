@@ -9,7 +9,7 @@ from . import cmudict
 _pad        = '_'
 _eos        = '~'
 
-label = 'phone'    # pingyin  phone
+label = 'phone'    # pinyin  phone
 
 if(label == 'pinyin'):
     #_characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!\'\"(),-.:;? '
