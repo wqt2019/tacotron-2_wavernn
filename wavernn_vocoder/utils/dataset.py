@@ -43,8 +43,7 @@ class VocoderDataset(Dataset):
         mel = (np.load(mel_path).T.astype(np.float32) + 4) / 8
         # Load the wav
         wav = np.load(wav_path)
-        apply_preemphasis = True
-        # hop_length = 275
+        apply_preemphasis = False
         hop_length = hp.hop_length
         if apply_preemphasis:
             wav = pre_emphasis(wav)
@@ -81,12 +80,13 @@ def get_vocoder_datasets(path: Path, batch_size, train_gta):
     #
     # dataset_ids = [x[0] for x in dataset]
 
-    metadata_fpath = path + 'train.txt'
+    metadata_fpath = path + 'map.txt'
     with open(metadata_fpath,"r") as metadata_file:
         metadata = [line.split("|") for line in metadata_file]
         random.shuffle(metadata)
 
-    gta_path = path + 'gta/'
+    # gta_path = path + 'gta/'
+    gta_path = path + 'mels/'
     audio_path = path + 'audio/'
     print("Using inputs from:\n\t%s\n\t%s\n\t%s" % (path, gta_path, audio_path))
 

@@ -16,7 +16,7 @@ def build_from_path_mydata(hparams, input_dirs, mel_dir, linear_dir, wav_dir, n_
     # biaobei
     if (data_set == 'biaobei'):
         for input_dir in input_dirs:
-            with open(os.path.join(input_dir, 'ProsodyLabeling', 'biaobei_transcript_pinyin.txt'), encoding='utf-8') as f:
+            with open(os.path.join(input_dir, 'ProsodyLabeling', 'biaobei_transcript_phone.txt'), encoding='utf-8') as f:
                 for line in f:
                     parts = line.strip().split(',')
                     basename = parts[0]

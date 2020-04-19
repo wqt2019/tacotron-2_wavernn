@@ -18,10 +18,15 @@ def float_2_label(x, bits):
 def load_wav(path):
     return librosa.load(path, sr=hp.sample_rate)[0]
 
+save_type = 'f32'   # int16  f32
 
 def save_wav(x, path):
-    librosa.output.write_wav(path, x.astype(np.float32), sr=hp.sample_rate)
-
+    if(save_type == 'f32'):
+        librosa.output.write_wav(path, x.astype(np.float32), sr=hp.sample_rate)
+    else:
+        from scipy.io import wavfile
+        x *= 32767 / max(0.01, np.max(np.abs(x)))
+        wavfile.write(path, hp.sample_rate, x.astype(np.int16))
 
 def split_signal(x):
     unsigned = x + 2**15

@@ -15,7 +15,6 @@ from wavernn_vocoder.models.fatchord_version import WaveRNN
 from wavernn_vocoder.utils import hparams as wavernn_hp
 from wavernn_vocoder.utils.paths import Paths
 from wavernn_vocoder.utils.display import simple_table
-from wavernn_vocoder.utils.dsp import reconstruct_waveform, save_wav
 import warnings
 warnings.filterwarnings("ignore")
 os.environ["CUDA_VISIBLE_DEVICES"] = '1'
@@ -59,7 +58,6 @@ def init_tacotron2(args):
 	return synth,eval_dir,log_dir
 
 def init_wavernn(args):
-	##########################################
 	# wavernn
 	print('\n#####################################')
 	if args.vocoder == 'wavernn' or args.vocoder == 'wr':
@@ -112,15 +110,14 @@ def init_wavernn(args):
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--taco_checkpoint',
-			default='./logs-Tacotron-2/taco_pretrained/',
-			help='Path to model checkpoint')
+			default='./logs-Tacotron-2_phone/taco_pretrained/',help='Path to model checkpoint')
 	parser.add_argument('--hparams', default='',
 		help='Hyperparameter overrides as a comma-separated list of name=value pairs')
 	parser.add_argument('--model', default='Tacotron')
 	parser.add_argument('--vocoder', default='wr')
 	parser.add_argument('--mels_dir', default='tacotron_output/eval/', help='folder to contain mels to synthesize audio from using the Wavenet')
 	parser.add_argument('--output_dir', default='output/', help='folder to contain synthesized mel spectrograms')
-	parser.add_argument('--text_list', default='sentences.txt', help='Text file contains list of texts to be synthesized. Valid if mode=eval')
+	parser.add_argument('--text_list', default='sentences_phone.txt', help='Text file contains list of texts to be synthesized. Valid if mode=eval')
 	parser.add_argument('--speaker_id', default=None, help='Defines the speakers ids to use when running standalone Wavenet on a folder of mels. this variable must be a comma-separated list of ids')
 
 	# wavernn
@@ -148,7 +145,6 @@ def main():
 	log('Starting Synthesis')
 	with open(os.path.join(eval_dir, 'map.txt'), 'w') as file:
 		for i, texts in enumerate(tqdm(sentences)):
-			start = time.time()
 			print('\nsynthesis mel:' + str(i))
 			basenames = ['batch_{}_sentence_{}'.format(i, j) for j in range(len(texts))]
 			mel_filenames, speaker_ids = synth.synthesize(texts, basenames, eval_dir, log_dir, None)
@@ -157,24 +153,20 @@ def main():
 			print('\nsynthesis mel done')
 
 			# wavernn
-			print('\nstart wavernn')
-
-			mel_filenames = mel_filenames[0]
-			# print('\n'+ mel_filenames)
-			m = np.load(mel_filenames)
-			m = (m + 4) / 8
-			m = np.transpose(m, (1, 0))
-
 			if args.vocoder == 'wavernn' or args.vocoder == 'wr':
+				print('\nstart wavernn')
+				mel_filenames = mel_filenames[0]
+				# mel_filenames = './test_mel/mel-batch_' + str(i) + '_sentence_0.npy'
+				m = np.load(mel_filenames)
+				m = (m + 4) / 8
+				m = np.transpose(m, (1, 0))
+
 				save_wr_file = output_wr_dir + str(i) + '_' + str(v_type) + str(voc_k) + 'k.wav'
 				m = torch.tensor(m).unsqueeze(0)
 				voc_model.generate(m, save_wr_file, wavernn_hp.voc_gen_batched, wavernn_hp.voc_target, wavernn_hp.voc_overlap, wavernn_hp.mu_law)
-			# elif args.vocoder == 'griffinlim' or args.vocoder == 'gl':
-			# 	save_wr_file = output_wr_dir + str(i) + '_gl.wav'
-			# 	wav = reconstruct_waveform(m, n_iter=args.iters)
-			# 	save_wav(wav, save_wr_file)
-			print('\nwavernn done')
-			print('#####################\n')
+
+				print('\nwavernn done')
+				print('#####################\n')
 
 	log('\nsynthesized done at {}'.format(output_wr_dir))
 

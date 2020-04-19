@@ -62,14 +62,11 @@ def _clean_text(text, cleaner_names):
     text = cleaner(text)
   return text
 
-# pinyin
+label = 'phone'    # pinyin phone
 def _symbols_to_sequence(symbols):
+  if(label == 'phone'):
+    symbols = re.split("( )", symbols)
   return [_symbol_to_id[s] for s in symbols if _should_keep_symbol(s)]
-
-# phone
-# def _symbols_to_sequence(symbols):
-#   symbols1 = re.split("( )", symbols)
-#   return [_symbol_to_id[s] for s in symbols1 if _should_keep_symbol(s)]
 
 def _arpabet_to_sequence(text):
   return _symbols_to_sequence(['@' + s for s in text.split()])
