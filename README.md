@@ -20,14 +20,14 @@ gta:
 - Step **(0)**: python preprocess.py ，process the audios for t2 and wavernn training .  
 - Step **(1)**: python train_tacotron.py ，while finish the t2 training, it will generate gta data .  
 - Step **(2)**: python train_wavernn.py ，training the wavernn with the gta data .  
-- Step **(3)**: python inference_tacotron2_wavernn.py ，while finished the training , you can test the t2 + wavernn tts system.  
+- Step **(3)**: python inference_tacotron2_wavernn.py ，while finish the training , you can test the t2 + wavernn tts system.  
   
 real mel:  
 - Step **(0)**: python preprocess.py ，process the audios for t2 and wavernn training .  
-- Step **(1)**: edit [hparams.py](./wavernn_vocoder/hparams.py) , change the 'data_path' that 'gta_path' correspond to the 'mels' dir , and 'audio_path' correspond to the 'audio' dir which are generated in step 0 (line 89 and 90 in ./wavernn_vocoder/utils/dataset.py).  
+- Step **(1)**: edit [hparams.py](./wavernn_vocoder/hparams.py) , change the 'data_path' that 'gta_path' correspond to the 'mels' dir , and 'audio_path' correspond to the 'audio' dir which are generated in step 0 (line 89 and 90 in [dataset.py](./wavernn_vocoder/utils/dataset.py)).  
 - Step **(2)**: python train_tacotron.py .  
 - Step **(3)**: python train_wavernn.py ，training with the real mel data. 
-- Step **(4)**: python inference_tacotron2_wavernn.py ，while finished the training , you can test the t2 + wavernn tts system.  
+- Step **(4)**: python inference_tacotron2_wavernn.py ，while finish the training , you can test the t2 + wavernn tts system.  
   
 also ,run inference_wavernn.py if you only interested in vocoder .
   
