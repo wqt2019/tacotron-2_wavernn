@@ -35,7 +35,7 @@ peak_norm = False                   # Normalise to the peak of each wav file
 
 
 # Model Hparams
-voc_mode = 'MOL'                    # either 'RAW' (softmax on raw bits) or 'MOL' (sample from mixture of logistics)
+voc_mode = 'RAW'                    # either 'RAW' (softmax on raw bits) or 'MOL' (sample from mixture of logistics)
 voc_upsample_factors = (5, 5, 11)   # NB - this needs to correctly factorise hop_length
 voc_rnn_dims = 512
 voc_fc_dims = 512
