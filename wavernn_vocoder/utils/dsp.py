@@ -24,9 +24,12 @@ def save_wav(x, path):
     if(save_type == 'f32'):
         librosa.output.write_wav(path, x.astype(np.float32), sr=hp.sample_rate)
     else:
-        from scipy.io import wavfile
-        x *= 32767 / max(0.01, np.max(np.abs(x)))
-        wavfile.write(path, hp.sample_rate, x.astype(np.int16))
+        # from scipy.io import wavfile
+        # x *= 32767 / max(0.01, np.max(np.abs(x)))
+        # wavfile.write(path, hp.sample_rate, x.astype(np.int16))
+        import soundfile as sf
+        # x = (x + 32768) / 65535. * 2 - 1
+        sf.write(path, x, hp.sample_rate, 'PCM_16')
 
 def split_signal(x):
     unsigned = x + 2**15
