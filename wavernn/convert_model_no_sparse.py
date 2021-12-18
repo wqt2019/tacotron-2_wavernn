@@ -187,7 +187,7 @@ if __name__ == "__main__":
     elSize = 4  # change to 2 for fp16
 
     output_path = './'
-    checkpoint_file_name = 'D:/Program Files/JetBrains/PyCharm2021.1.1/work/tts/tacotron2_audiohifigan1/wavernn/checkpoints/biaobei_mol.wavernn/latest_weights.pyt'
+    checkpoint_file_name = './checkpoints/biaobei_mol.wavernn/latest_weights.pyt'
     save_model = output_path+'/biaobei_wavernn_256.bin'
 
     device = torch.device("cpu")
