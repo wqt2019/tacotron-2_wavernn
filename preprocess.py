@@ -2,7 +2,7 @@ import argparse
 import os
 from multiprocessing import cpu_count
 
-from datasets import preprocessor
+from utils import preprocessor
 from hparams import hparams
 from tqdm import tqdm
 
@@ -15,7 +15,6 @@ def preprocess(args, input_folders, out_dir, hparams):
 	os.makedirs(wav_dir, exist_ok=True)
 	os.makedirs(linear_dir, exist_ok=True)
 	metadata = preprocessor.build_from_path_mydata(hparams, input_folders, mel_dir, linear_dir, wav_dir, args.n_jobs,tqdm=tqdm)
-	# metadata = preprocessor.build_from_path(hparams, input_folders, mel_dir, linear_dir, wav_dir, args.n_jobs, tqdm=tqdm)
 	write_metadata(metadata, out_dir)
 
 def write_metadata(metadata, out_dir):
@@ -78,12 +77,13 @@ def norm_data(args):
 
 
 def run_preprocess(args, hparams):
-	# input_folders = norm_data(args)
-	# output_folder = os.path.join(args.base_dir, args.output)
 
-	input_folders = ['/xxx/BZNSYP/']
-	output_folder = '/xxx/tacotron2_wavernn/training_data'
+	person_name = 'biaobei'
+	input_folders = os.path.join('./dataset/', person_name)
+	output_folder = os.path.join('./dataset/tacotron2/', person_name,'training')
 
+	print('input_folders:', input_folders)
+	print('output_folder:', output_folder)
 	preprocess(args, input_folders, output_folder, hparams)
 
 
@@ -100,15 +100,12 @@ def main():
 	parser.add_argument('--merge_books', default='False')
 	parser.add_argument('--book', default='northandsouth')
 	parser.add_argument('--output', default='training_data')
-	parser.add_argument('--n_jobs', type=int, default=4)
-	#parser.add_argument('--n_jobs', type=int, default=cpu_count())
+	parser.add_argument('--n_jobs', type=int, default=8) #cpu_count()
 	args = parser.parse_args()
-
-	modified_hp = hparams.parse(args.hparams)
 
 	assert args.merge_books in ('False', 'True')
 
-	run_preprocess(args, modified_hp)
+	run_preprocess(args, hparams)
 
 
 if __name__ == '__main__':

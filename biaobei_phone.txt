@@ -1,0 +1,200 @@
+000001,k a2 er2 p u3 #2 p ei2 w uai4 s uen1 #1 w uan2 h ua2 t i1 #4 。
+000002,j ia2 y v3 c uen1 y ian2 #2 b ie2 z ai4 #1 y iong1 b ao4 w uo3 #4 。
+000003,b ao2 m a3 #1 p ei4 g ua4 #1 b o3 l uo2 an1 #3 ， d iao1 ch an2 #1 y van4 zh en3 #2 d ong3 w uen1 t a4 #4 。
+000004,d eng4 x iao3 p ing2 #2 y v3 #1 s a4 q ie4 er3 #2 h uei4 w u4 #4 。
+000005,l ao2 h u3 #1 y iou4 z ai3 #2 y v2 #1 ch ong3 w u4 q van3 #1 w uan2 sh ua3 #4 。
+000006,sh en1 ch ang2 #2 y ve1 #1 w u2 ch iii3 #1 er4 c uen4 #1 w u3 f en1 #2 h uo4 #1 y i3 sh ang4 #4 。
+000007,zh ao4 d i2 #2 y ve1 #1 c ao2 y vn2 t eng2 #2 q v4 #1 g uei3 w u1 #4 。
+000008,zh an2 p in3 #1 s uei1 y iou3 #2 ， zh an3 y van2 #1 q ve4 t uei2 #4 。
+000009,y i2 #1 s an3 j v1 #1 er2 t ong2 #2 h e2 #1 y iou4 t uo1 #1 er2 t ong2 #1 w uei2 zh u3 #4 。
+000010,k e1 t e4 n i1 #2 sh en1 ch uan1 #2 b ao4 w uen2 #1 d a4 y i1 #4 。
+000011,y in3 c ai2 #1 y iao4 sh ai1 #2 ， y iong4 c ai2 #2 y ie3 #1 y iao4 sh ai1 #4 。
+000012,n an2 y ve4 #2 k uen1 l uen2 sh an1 #2 y v3 #1 x i1 z ang4 #1 j ie1 r ang3 #4 。
+000013,w uen1 k ai3 l an2 #3 f ang2 #1 r u3 x ian4 ai2 #1 x van1 ch uan2 zh ao4 #4 。
+000014,w uo3 h uei2 #2 y iou4 h eng1 h eng5 #2 z uo3 h eng1 h eng5 #4 。
+000015,w u2 y vn2 b ao2 #1 n ai3 n ai5 #2 t iao1 x van3 #1 p i2 p a2 #4 。
+000016,c ii3 w uai4 #2 g uang2 b en3 #2 y ie3 j iang1 y iou2 #2 sh ao4 zh uang4 p ai4 #1 zh ang2 g uan3 #4 。
+000017,y iou4 m an2 #1 w u3 #1 n iao2 n iao3 #3 ， z uo3 q iong2 #2 g e1 #1 x i1 x i1 #4 。
+000018,y ian3 k uang4 #2 k uan1 k uo4 #1 er2 #1 d i1 ai3 #3 ， b i2 d uan3 #1 er2 k uan1 #4 。
+000019,x ia2 p u3 #1 x ian4 y ia2 #2 ch eng2 zh en4 #1 w u1 q i2 #3 、 w ua3 y iao2 c uen1 #2 sh uei3 w uei4 #1 m eng2 zh ang3 #4 。
+000020,h uo4 s ii1 y ian4 #2 l u4 b ei4 #1 x iou4 r u3 g ou1 #2 x ing4 g an3 #1 r e2 h uo3 #4 。
+000021,y ie3 #1 k e2 y i3 #2 g ei3 #1 b en2 w uei3 y van2 #1 f an3 y ing4 y iou5 #4 。
+000022,y iao2 l an2 p ai2 #2 g ai4 w uei2 j ian4 #2 y ing1 er2 #2 p ei4 f ang1 #1 n ai2 f en3 #4 。
+000023,e4 y v4 #2 l u2 w uan3 s u1 #2 j v2 d i4 #1 d a4 b ao4 y v3 #4 。
+000024,y i3 x ia4 #2 w uei2 #1 x ve1 m an2 z ii5 #2 g uan1 d ian3 #1 zh ai1 y iao4 #4 。
+000025,ch en2 y v2 #1 l uo4 y ian4 #3 ， b i4 y ve4 #1 x iou1 h ua1 #4 。
+000026,er2 #1 x v3 g uan4 y ing1 #3 y i4 #1 j iang1 y v2 #2 m ing2 r iii4 #1 ch u1 b in4 #4 。
+000027,a1 j iao1 #2 y v2 #1 b ai3 w uei4 #1 g uei2 f en3 s ii1 #1 k uang2 h uan1 #4 。
+000028,f ang2 w u1 #2 m ai3 m ai4 #1 q i4 y ve1 #2 h e2 #1 sh ou1 t iao2 #4 。
+000029,l iou4 w uan1 rr #2 d ou1 d ei3 #2 d uo2 y van2 d ian3 #4 。
+000030,h ei1 x iong2 #2 ch uang3 j in4 #2 w uang2 m ing2 h uei1 j ia1 #2 h ou4 y van4 #1 m i4 sh iii2 #4 。
+000031,w u2 y ia4 j vn1 #2 y v3 zh ang4 f u5 #1 c ai4 k uei2 #4 。
+000032,y ia4 #1 x iao1 s uan1 y ian2 #2 w uei4 w uei1 x ian2 #3 ， y i4 r ong2 y v2 sh uei3 #4 。
+000033,y van4 q iang2 #2 b ei4 #1 sh iii2 m ian2 w ua3 #2 zh e1 y ian3 sh ang4 l e5 #4 。
+000034,ch eng2 y in1 #2 t iao1 x van2 #1 w uo2 y ian3 #2 zh ao4 y v4 m in3 #4 。
+000035,y in2 ch iii1 #1 m ao3 l iang2 #3 ， w u2 y i4 y v2 #2 y in3 zh en4 #1 zh iii2 k e3 #4 。
+000036,l v2 z ii5 #2 y ve4 p ao3 #1 y ve4 k uai4 #3 ， y ve4 p ao3 #1 y ve4 f eng1 k uang2 #4 。
+000037,y ie2 y v2 d e5 #1 s uen1 y iao2 #2 ch a4 d ian3 #2 b ei4 g uo4 #1 q i4 rr #4 。
+000038,g uang1 g uen4 j ie2 #1 y ing2 x iao1 #2 y ing4 y vn4 #1 er2 sh eng1 #4 。
+000039,g ao1 y ia1 #2 t ie2 t a3 x ia4 d e5 #2 d i1 ai3 #1 p eng2 w u1 #4 。
+000040,d ian4 y ing2 #1 h ai3 b ao4 #3 p in2 m in2 k u1 #2 b ai3 w uan4 #1 f u4 w uen1 #4 。
+000041,d iao1 w uei2 l ie4 #2 y i3 b ei4 #1 l ing4 an4 #1 ch u2 l i3 #4 。
+000042,y vn2 w u4 #2 y iou3 sh iii2 #1 w uan3 r u2 #1 y v4 d ai4 #2 p ing2 w uo4 #2 f eng1 l uan2 #1 sh an1 j ian1 #3 ， y iou3 sh iii2 #2 ch uei1 y ian1 #1 n iao3 r ao4 #2 ， b o2 w u4 #1 q ing1 x van2 #4 。
+000043,z uei3 b a5 #1 zh ou1 w uei2 #2 l ve4 w uei1 #1 zh ong2 q i3 #4 。
+000044,h uan1 sh eng1 #1 x iao4 y v3 #2 s a2 m an3 #1 c uen1 zh uang1 #4 。
+000045,sh a1 ch ang3 #2 j ing4 y vn3 m ing4 #3 ， zh uang4 zh iii4 #1 y ie3 #1 w u2 w uei2 #4 。
+000046,y iou2 zh a2 #1 d ou4 f u5 #1 p en1 p en1 x iang1 #3 ， s an3 z ii5 #1 m a2 h ua1 #2 b eng1 b eng1 c uei4 #3 ， z ii3 m ei4 #1 t uan2 z ii5 #2 sh u3 er4 j iang1 #4 。
+000047,b en3 sh an1 #1 y ie3 zh en1 #2 t ai4 #1 k ou1 m en2 rr l e5 #4 。
+000048,l in4 d ong1 y ing1 d e5 #2 zh u4 y van4 #1 b ing4 an4 #4 。
+000049,q van3 #2 b i4 x v1 #1 sh uan1 y iang3 #2 h uo4 #1 j van4 y iang3 #4 。
+000050,h e4 l i4 #2 h e2 #1 y in4 d u4 #1 d a4 h eng1 #2 a1 l ang2 #1 n ai4 er3 #2 y i3 j ing1 #2 f en1 j v1 #1 sh u4 y ve4 #4 。
+000051,n an4 x iong1 #1 n an4 d i4 #2 y iao4 #1 h ao2 h ao3 #2 q ie1 c uo1 #1 q ie1 c uo1 #4 。
+000052,x iao3 j vn1 #2 d a4 t uei3 #1 n ei4 c e4 #1 y v1 q ing1 #4 。
+000053,y i3 j i2 #2 c ii2 x iong2 #1 k ong2 z ii2 n iao3 #2 f u4 y van2 t u2 #4 。
+000054,y v3 #1 n v2 y ian3 y van2 #1 p ai1 w uen3 x i4 #3 ， ch en2 x iao3 ch uen1 #2 b u2 p a4 #1 y ing4 c ai3 er2 #1 ch iii1 c u4 #4 。
+000055,f ang3 #1 zh en1 zh iii1 #2 、 c u1 h ua1 n i2 #1 d eng3 #2 y in4 h ua1 #1 m ian4 l iao4 d e5 #2 q iao3 m iao4 #1 y vn4 y iong4 #4 。
+000056,y v3 #1 y ve1 s e4 f u1 #2 t ie1 m ian4 #1 l ou3 b ao4 #4 。
+000057,n u2 er3 #2 b ie2 er3 d e2 #1 y ie1 w ua2 #2 q ing3 #1 zh ou1 y iong3 k ang1 #2 zh uan3 d a2 #1 d uei4 #1 w u2 b ang1 g uo2 #1 w uei3 y van2 zh ang3 d e5 #1 q in1 q ie4 #1 w uen4 h ou4 #4 。
+000058,j in1 y iou3 zh uang1 #2 m an2 er2 #1 x ia4 zh ou1 #1 j van1 sh en4 #4 。
+000059,w uo2 w uo3 #1 w uo2 w uo3 #1 w uo2 w uo3 #1 h e2 #1 p ang4 z ii5 #1 y i4 q i3 #4 。
+000060,s ao3 s ao5 #2 g ei3 z uo4 d e5 #1 y iou2 m ian4 #1 w uo1 w uo5 #3 、 h e2 #1 y iang2 r ou4 #1 d uen4 sh an1 y iao4 #4 。
+000061,m an4 s a4 #1 n i2 y ve1 #1 g ang2 k ou3 #2 b ei4 #1 g uan1 b i4 #4 。
+000062,l iao4 b i4 er2 #2 m a2 y ia3 sh u1 #2 h e2 #1 l ao3 g ong1 #2 sh ai4 en1 ai4 #4 。
+000063,w ua4 z ii5 t an1 #1 x iao3 l ao2 b an3 #2 ch en2 y iong3 q van2 #4 。
+000064,h e2 j i4 #1 ch ou2 z ii1 #2 y i1 d ian3 #1 y i1 er4 j iou3 #2 y i1 w u2 #1 w u3 y i4 y van2 #4 。
+000065,n iao3 er2 #1 zh a1 zh a1 #3 ， z ou4 q i3 #1 ch en2 q v3 #4 。
+000066,t i3 q iang2 zh uang4 er2 #2 h ou4 #1 x ve2 w uen4 #3 d ao4 d e2 #1 zh iii1 #1 j in4 x iou1 y iong3 #2 er2 #1 sh ou1 x iao4 y van3 #4 。
+000067,w uang3 g ou4 #2 h uo4 #1 w uang3 s ou1 #1 g u3 m in2 #1 x in4 x i1 #3 ， y i3 #1 g ao1 h uei2 b ao4 #1 w uei2 er3 #2 q ing3 j vn1 #1 r u4 w uen4 #4 。
+000068,t u2 w uei2 #2 k ai2 m u3 b o2 y i1 #2 x ie2 x ian4 #1 ch ong1 c ii4 #4 。
+000069,j i2 j iang1 #2 d iao4 y v2 t ai2 #3 、 h uang2 w uei2 y v3 #3 、 ch iii4 y v3 #1 s an1 d ao3 #3 sh ang2 g ei3 #2 sh eng4 x van1 #1 h uai2 w uei2 #1 ch an3 y ie4 #3 ， g ong1 #1 c ai3 y iao4 #1 zh iii1 y iong4 #4 。
+000070,y iong4 b u2 y iong4 #2 w uo3 #1 t i4 n i2 #1 w u3 zh e5 z uei3 #4 。
+000071,er4 j ing4 j ia1 #2 zh u4 #1 b ei2 w u3 #1 h uan2 w uai4 #3 ， sh ang4 b an1 #2 y iao4 q v4 #1 y ia4 y vn4 c uen1 #2 h ua2 t ang2 #1 sh ang1 ch ang3 #4 。
+000072,y iou3 g uan1 #2 n eng2 f ou2 #1 g ai3 k ong4 #1 ch uan4 m ou2 #4 。
+000073,b u4 l v3 n i2 #3 y ie2 y v3 #1 q ian2 f u1 #1 zh e2 x ve2 j ia1 #2 l a1 f ei2 er3 #2 y v4 y iou3 #1 y i4 z ii3 #4 。
+000074,y iou4 y iou3 #1 sh uei2 k en2 #2 sh e3 sh iii1 #1 g ei3 t a1 n e5 #4 ？
+000075,q ie4 z ei2 #1 l ou4 t uei3 #2 z ii4 ch eng1 #2 h uan4 #1 m a2 f eng1 b ing4 #4 。
+000076,l ao3 z u2 m u3 #2 y i3 #1 m ou2 sh a1 z uei4 #1 b ei4 #1 sh ou1 y ia1 #4 。
+000077,ai3 c uo2 q iong2 #3 ， b ie2 x ia1 k ua1 #4 。
+000078,y v2 #1 z ai4 sh uei2 l i2 #2 d a3 x van2 d e5 #2 w uang3 w uai4 #1 l uan4 b eng4 #4 。
+000079,zh uo2 w uen2 j vn1 sh uo1 #3 ： w uan3 r u2 #1 sh an1 sh ang4 x ve3 #3 ， j iao3 r uo4 #2 y vn2 j ian1 y ve4 #4 。
+000080,y i2 l ei4 m iao2 #2 k e3 w uei4 #2 m ing4 y vn4 #1 d uo1 ch uan3 #4 。
+000081,m ou2 #1 x iao3 s ong2 #2 k uai4 k uai4 #1 k an4 k an5 #4 。
+000082,t ie3 sh a1 zh ang3 #1 ai4 h ao4 zh e3 #1 zh ang1 h uei1 #2 b iao2 y ian3 #1 p i1 zh uan1 #4 。
+000083,er2 #1 l v3 y ie4 x in1 #3 y ie3 b ei4 #1 y i4 g en1 #1 l in3 z ii5 #1 y ia1 zh e5 #4 。
+000084,zh uen1 zh uen1 #1 d ing1 n ing2 #3 ， w u4 w uang4 #1 t ian1 sh an1 #2 b u3 y v4 q ing2 #4 。
+000085,x ian4 z ai4 sh iii4 #2 d ao4 rr #2 y ve4 z ou3 #1 y ve4 k uan1 #3 ， r en2 q i4 #2 y ve4 g ao3 #1 y ve4 w uang4 #4 。
+000086,w u4 y iong1 #1 h uei4 y ian2 #3 ， r en2 y iou3 #1 j i4 x ing4 #3 ， y i4 y iou3 #1 w uang4 x ing4 #4 。
+000087,c an1 h ou4 #3 ， y i4 x ing2 r en2 #2 y iou4 p ei2 #1 w uang1 x iao3 f ei1 #3 d ao4 #1 l ing4 y i4 zh en2 s uo3 #2 k an4 #1 er3 b i2 h ou2 k e1 #4 。
+000088,g an4 m a2 a5 n i3 #2 y iou4 l ai2 #1 g ou1 d a5 sh ei2 #4 。
+000089,y ve1 w uan2 k a3 #2 y v2 #1 t ie3 t uo1 #2 m ei2 y iou3 #1 h ai2 z ii5 #4 。
+000090,sh ou4 s uen3 #2 s ong4 d ai4 #1 g e1 y iao2 #2 q ing1 y iou4 #1 k uei2 b an4 #1 k ou3 p an2 #2 zh eng4 m ian4 #1 s uen2 h uei3 h ou4 #4 。
+000091,y ie3 #1 h uan1 y ing2 #2 w uei4 sh eng1 m ian2 #1 ch ang3 sh ang1 #3 zh ao2 w uo3 #1 d ai4 y ian2 #4 。
+000092,l ou2 y i2 #1 w uang3 h uan2 #2 k ong1 #1 l ong2 m u3 #3 ， q i2 l in2 #1 m ai2 m o4 #2 j i3 ch uen1 q iou1 #4 。
+000093,r u2 #1 h u4 f a4 #2 h e2 #1 h u4 y ian3 #2 y iao4 #1 d ai4 sh ang4 #2 g uei1 j iao1 #1 y iong3 m ao4 #3 h e2 #1 zh ai1 ch u2 #1 y in3 x ing2 #1 y ian3 j ing4 #4 。
+000094,m a3 x vn4 w uei2 #2 y v3 #1 y iang2 y i2 d eng3 #2 g ong4 d u4 #1 sh eng1 r iii4 #4 。
+000095,sh eng3 j i2 #1 w uen2 b ao3 #1 d an1 w uei4 #3 m an3 y van4 rr #2 l iou1 d a5 j i1 #4 。
+000096,t u2 w uei2 #2 zh ong1 sh an1 #1 zh an1 y van2 #2 g uang3 y iao1 #2 q ian1 y v2 #1 y iou2 k e4 #3 p in3 ch ang2 #2 ch ong2 y iang2 #1 y i4 sh ou4 #2 q ian1 s ou3 y ian4 #4 。
+000097,x iao3 w uen2 j ie2 #2 q van2 sh en1 #1 k u1 sh ou4 #1 r u2 ch ai2 #4 。
+000098,q in2 m ou3 #2 y iong4 #1 l ian3 p en2 #1 y iao2 sh uei3 #2 j iang1 h uo3 #1 p u1 m ie4 #4 。
+000099,an1 q van2 t ao4 #2 z uo4 ch eng2 #1 w u1 d u2 #1 w ua2 w ua5 #1 y iang4 z ii5 #4 。
+000100,d i4 s an1 #2 sh iii4 #1 k ao3 y ia1 #2 q ve1 j in1 #1 d uan2 l iang3 #4 。
+000101,ch uan2 #1 m a3 y i1 l i2 #2 h uai2 sh ang5 #1 er4 t ai1 #4 。
+000102,f eng1 zh eng5 #1 y iao4 x ian4 #3 ， b en1 m a3 #1 y iao4 j iang1 #3 ， h ang2 ch uan2 #1 y iao4 d uo4 #4 。
+000103,j ia3 y van2 y van5 #2 t uo1 #1 g ao1 y ve4 #1 sh ang4 l ou2 #4 。
+000104,h ei1 p ao2 n iao2 #1 x iao3 h ei1 #2 sh iii5 #1 l in2 b a1 g e1 #4 。
+000105,t a1 #1 y ve4 en4 #3 ， w uo3 #1 y ve4 h uang1 #3 ， f a1 d ong4 #1 y ve4 m an4 #4 。
+000106,m ao3 t u4 #2 k ai1 x in1 s uei4 #3 ， l iang3 an4 #2 g ong4 y ing2 ch uen1 #4 。
+000107,w u3 y ve4 #1 t ian1 m a3 sh a1 #3 t i4 #1 j v2 w ua2 w ua5 #3 h uan4 zh uang1 #1 b i3 j i1 n i2 #4 。
+000108,p o1 t u3 #2 y ian2 x ing4 #1 w uei2 #1 p o1 p o1 #3 ， c an2 j i1 t u3 #2 sh u2 #1 t u3 zh iii4 #1 b ian1 p o1 #4 。
+000109,m o4 x i1 g e1 #2 y i1 w u3 #1 er4 y i1 n ian2 #3 l uen2 w uei2 #2 x i1 b an1 y ia2 #2 zh iii2 m in2 d i4 #4 。
+000110,w ua2 h a1 h a1 #1 q i3 y ie4 #2 y ian2 j iou1 y van4 #1 f u4 y van4 zh ang3 #2 l i3 y ian2 j vn4 #3 s uan4 sh iii4 #2 k u2 zh u3 #1 zh iii1 y i1 #4 。
+000111,zh ou1 y vn4 #3 z e2 h uo4 #2 l ao3 w uai4 #1 l ou3 y iao1 #3 ， x ing1 f en4 #1 d a4 x iao4 #4 。
+000112,w uo3 #1 y iao4 y iong4 #1 g u3 g e1 #3 f a1 s ong4 #1 y i4 f eng1 #1 y iou2 j ian4 #4 。
+000113,d i2 w uo4 er3 f u1 #3 z e2 #1 t uen1 l e5 #1 y i4 k ou2 sh uei3 #4 。
+000114,x ian1 sh iii1 d e5 #2 y ian2 j iou1 #1 l ing3 y v4 #2 h ao4 h an4 #1 w u2 y ia2 y i3 #4 。
+000115,y in1 #2 g an1 d ie1 #1 er2 h ong2 d e5 #1 m o2 t e4 #1 zh ou1 r uei3 #4 。
+000116,w uan2 k a1 #2 y iong4 l ai2 #1 p ian4 #1 m ei3 m ei2 #4 。
+000117,w u3 j ie4 #1 s ong1 s an3 #1 x ia2 ai4 #3 ， y iao4 #1 t uan2 j ie2 #1 h e2 z uo4 #4 。
+000118,x i1 w uang4 #2 k an4 y i4 y ian3 #2 g e2 er3 m u4 d e5 #1 sh u4 y ie4 #4 。
+000119,b ing3 zh e2 #2 y ie3 #1 h uei2 w uen3 #1 d a4 m ang3 sh e2 #4 。
+000120,ch eng2 m en2 #1 d ing3 d uan1 #2 y iou3 #1 t ao2 s e4 d e5 #1 t ao2 w ua3 #3 ， w u1 d ing3 #2 y i3 #1 l ong2 f eng4 #2 d eng3 #1 r uei4 sh ou4 #1 zh uang1 sh iii4 #4 。
+000121,x ve2 sh eng1 #2 t a4 sh ang4 #1 l an2 g an1 #2 x i4 n ong5 #1 e4 y v2 #4 。
+000122,n i3 k an4 #2 l iang2 ch ao2 w uei2 y ian3 #1 s e4 j ie4 #3 ， l iou2 j ia1 l ing2 #2 y ie2 d ei2 #2 y iao3 y ia2 #1 r en3 zh u4 y ia5 #4 。
+000123,zh e4 y iao4 #1 w uen4 w uen5 #2 h uo3 x ing1 #1 sh ang4 d e5 #1 y v2 l a5 #4 。
+000124,zh ong1 zh en4 t ao1 #2 y v2 #1 n v3 er2 #2 q ian1 sh ou3 #1 g uang4 j ie1 #4 。
+000125,y i1 c eng2 #2 k e2 y i3 zh ong4 #2 h ua1 h ua1 #1 c ao2 c ao3 #4 。
+000126,m ei3 j ia1 #1 z uo1 f ang5 #2 s uen3 sh iii1 y iou3 #2 y i1 er4 #1 sh iii2 w uan4 y van2 #4 。
+000127,t a1 #2 m ian4 r ong2 #1 q iao2 c uei4 #3 ， y iou4 t uei2 #1 y iou3 x ie1 #1 q ve2 g uai3 #4 。
+000128,j iou4 j iou5 #2 zh iii3 #1 zh ang1 sh ao2 h an2 #2 ou1 q in1 #4 。
+000129,f a3 y van4 #2 zh uen2 x v3 #2 h e2 t ong5 #1 j ie3 ch u2 #4 。
+000130,l ing4 w uai4 #3 ， w uo1 an4 #1 ch uan4 an4 d uo1 #3 y ie3 #1 y iou2 w uei2 #1 t u1 ch u1 #4 。
+000131,g ao3 x ie1 #2 l in2 y ie4 #1 j i1 x ie4 #1 zh u3 y ie4 #1 y i3 w uai4 d e5 #1 p ian1 y ie4 n e5 #4 ？
+000132,m ian2 h ua1 #1 sh ou1 g ou4 #2 y ie3 z ao1 #1 y iou2 z ii1 #2 e4 x ing4 #1 ch ao3 z uo4 #4 。
+000133,g u2 y iong3 q iang1 #3 y i3 #2 j vn1 b i4 #1 g ai1 x ia4 #4 。
+000134,t a1 #2 y iou4 k u1 #1 y iou4 n ao4 #3 ， h ai2 n a2 d ao1 #2 ch uo1 l ai2 #1 ch uo1 q v4 #4 。
+000135,z ai4 #1 f ang4 x ia4 #2 q ing1 s ao3 #1 j i1 h ou4 #3 ， w uan4 q ing4 l iang2 #2 g ai3 y iong4 #1 s ao4 zh ou5 #1 z uo4 y ie4 #4 。
+000136,t a1 #2 ang2 sh ou2 #1 t ing3 x iong1 #2 ， y ing2 f eng1 #1 er2 l i4 #3 ， j iong2 j iong2 #1 y iou3 sh en2 d e5 #1 sh uang1 m u4 #3 t iao4 w uang4 #1 q ian2 f ang1 #4 。
+000137,er2 #2 zh ang1 m ao2 #2 r iii4 q ian2 #1 y ie3 x van1 b u4 #2 y v3 #1 w uai4 j i2 #1 n an2 y iou3 #1 d ing4 h uen1 #4 。
+000138,m en2 l uo2 #1 d eng1 t a2 y van3 #3 ， k u1 m u4 #2 q v3 q van2 y iao2 #4 。
+000139,n i3 #1 w u2 y v3 #2 w uo2 h en3 #1 x ian2 d i5 l e4 #4 。
+000140,w uen4 t i2 #1 n iou2 r ou4 #2 j v4 x in4 #2 y van2 z ii4 #1 y i4 j ia1 #2 l uo2 m a3 n i2 y ia4 #1 t u2 z ai2 ch ang3 #4 。
+000141,a1 er2 w ua3 l ei2 s ii1 #2 y i1 y ian2 #1 x ing2 sh iii4 #4 。
+000142,zh iii3 y van4 #1 c ang1 t ian1 #2 x iang1 zh ao4 y ing5 #3 ， l iou2 d e2 #1 q ing2 y i4 #3 b i2 #1 j in3 c uei4 #4 。
+000143,y v4 zh iii1 #2 t iao1 x van3 #1 n an2 y iou3 #2 z uei4 p a4 #1 w u2 q v4 #4 。
+000144,t an2 t a3 w uei2 #2 h e2 an1 n an2 #3 b ei4 #1 r en4 m ing4 w uei2 #2 z ong2 t ong3 #1 g u4 w uen4 #4 。
+000145,x iao3 zh en1 #2 y i4 b ian1 #1 y iong4 #1 zh iii3 j in1 #2 an4 y ia1 #1 zh iii2 x ie3 #3 ， y i4 b ian1 #2 y iou4 #1 k ai1 sh iii3 #2 d i1 sh eng1 #1 ch uo4 q i4 #4 。
+000146,q iou1 sh ao2 zh iii4 #1 y in1 c ii3 #2 b ei4 #1 w uai4 j ie4 #1 f eng3 c ii4 sh iii4 #3 e4 y v2 t ou2 #2 ， l ao3 ch en4 d i3 #4 。
+000147,h ua1 d uo2 t i2 #2 y in3 f a1 #1 w uang2 y iou3 #2 r e4 y i4 #1 x iao4 f ang3 #4 。
+000148,x iao1 k e4 #2 z ai4 #1 k ong1 t iao2 ch ang3 #2 x ie4 w uan2 h uo4 #3 ， y iou2 #1 y van2 l u4 #1 f an3 h uei2 #2 c uen4 t an1 g ang3 #4 。
+000149,y iou2 c ii3 #1 q ian1 ch u1 #1 ch ou3 w uen2 #3 ， y iou3 r en2 #2 x v4 y i4 #1 z ai1 z ang1 #2 s a4 k e1 q i2 #4 。
+000150,w ua2 n u3 a1 t u2 #3 w uei4 y v2 #2 h uan2 t ai4 p ing2 y iang2 #1 d i4 zh en4 #1 d uo1 f a1 d ai4 #4 。
+000151,g an4 b a4 #1 n ong2 h uo2 #2 sh ang4 sh ang4 w uang3 #3 ， z an2 y ie3 #1 w uan2 w uan5 #2 j ia3 n ong2 ch ang3 #4 。
+000152,zh e4 #1 j iou4 sh iii4 #2 y ing1 y ie4 d a2 #2 y ing4 b ao1 r uan3 #3 ， r uan3 #1 m ai4 y ing4 d e5 #1 l i3 n ian4 #4 。
+000153,sh ao1 #1 h ua1 y ia1 #3 ， sh ao1 #1 ch u2 j i1 rr #4 。
+000154,zh ong4 q iang1 #1 x iao2 k ao3 l a1 #2 sh eng1 m ing4 #1 ch uei2 w uei1 #4 。
+000155,sh ou2 p eng2 #1 s ii3 c an2 #3 ， c an2 n ong2 #2 f ei1 ch ang2 #1 j v3 s ang4 #4 。
+000156,b u2 g uo4 #2 r eng2 #1 d ang3 b u2 zh u4 #1 y i4 x ie1 #1 y ian1 m in2 #2 t uen1 y vn2 #1 t u3 w u4 #4 。
+000157,q in1 p eng2 #1 h ao2 y iou3 #2 p eng3 zh e5 #1 h ua1 l an2 #2 q ian2 l ai2 #1 d iao4 y ian4 #4 。
+000158,j iou3 y iang2 #1 d ou4 j iang1 j i1 #3 w uo3 #1 d ao4 sh iii5 #1 h uei4 y iong4 #4 。
+000159,q van2 g uo2 #2 y i2 g ong4 y iou3 #2 y i4 b ai3 #1 y i1 sh iii2 er4 s uo3 #2 er4 y iao1 y iao1 #1 g ao1 x iao4 #4 。
+000160,f u4 h ao2 #1 l uo4 m a3 #2 y van2 y v2 #2 g uei1 f an4 #1 j ian1 d u1 #1 q ve1 w uei4 #3 、 n i4 ai4 #1 z ong4 r ong2 x ia4 d e5 #1 y ie3 m an2 #1 sh eng1 zh ang3 #4 。
+000161,w uang2 j in1 y ian4 #3 z uo3 c e4 #1 l u2 g u3 #2 y ian2 zh ong4 #1 ao1 x ian4 #4 。
+000162,y iong4 d e5 #1 q iang1 zh iii1 #3 y iou3 #1 a1 g a1 q iang1 #2 h e2 #1 sh ou3 q iang1 d eng3 #4 。
+000163,z uei4 h ou4 #1 m o3 d iao4 #2 k ou2 j iao3 #1 t uo4 m o5 #3 ， z uo4 n iao3 #1 sh ou4 s an4 #4 。
+000164,l ing4 y i4 m ing2 #1 y v4 n an4 zh e3 #2 q in2 p ing2 f eng4 #3 sh iii4 #1 ch ong2 m ing2 #1 y iao2 n an2 #1 c uen1 r en2 #4 。
+000165,y ing1 x iong2 #2 x iong2 n iao4 b ao3 #2 t ong4 sh iii1 #1 q in1 r en2 #2 l ao3 l ei4 #1 z ong4 h eng2 #4 。
+000166,e2 l uo2 s ii1 #2 g ong1 ch e1 #1 l an4 y iong4 #2 l v3 z ao1 #1 p eng1 j i1 #4 。
+000167,b an4 h ao3 #2 zh ong1 g uo2 #1 p u2 f a2 w uang3 #2 y ing1 w uen2 w uang3 #4 。
+000168,w uo3 m a1 #2 x iao4 w uo2 sh a3 #3 ， w uo3 m a1 #2 x iao4 w uo3 h an1 #4 。
+000169,ch iii1 g e5 #1 t ian2 t ong3 #2 j iang4 #1 j iang5 w uen1 b a5 #4 。
+000170,y ian4 y ia4 y ia5 #1 y iou2 h ua4 #1 z uo4 p in2 #2 n ai3 n ai5 #4 。
+000171,z ai4 #1 y in3 q iao2 #1 sh ang4 p ao2 #2 h en3 #1 w uei1 x ian3 #4 。
+000172,h u2 x ing4 er2 #2 sh eng4 zh uang1 #1 d a3 b an4 #3 ， y v3 #1 l iou2 q ing1 y vn2 #2 x ian4 sh en1 #2 w uei1 n i2 s ii1 #1 y ing2 zh an3 #4 。
+000173,y iang2 k ai2 #2 k u3 x iao4 zh e5 #3 ， j i4 x v4 #1 w uang3 j ia1 n uo2 #4 。
+000174,y ve1 #1 l iang3 w uan4 #1 l ing2 #1 l iang2 b ai3 r en2 #1 sh ou4 y ing2 x iang3 #4 。
+000175,n i3 zh an1 #1 w uo3 d e5 g uang1 #1 y ie3 g ou4 q iang1 #4 。
+000176,a1 m o4 #1 sh e2 m u3 #3 w uei4 y v2 #1 sh ou3 d u1 #2 l uen2 d uen1 #1 y i3 x i1 #4 。
+000177,g en4 q i2 zh iii3 #3 ， zh iii3 q i2 #1 s uo2 y ie3 #4 。
+000178,er2 #2 sh e4 an4 #1 b ei4 b u2 #1 n v3 y i2 f an4 #1 x ing4 h uang2 #4 。
+000179,n uan2 n uan3 #2 y ie3 #1 y ve4 l ai2 y ve4 #1 n i4 f an3 l e5 #4 。
+000180,j v4 #1 j ie4 sh ao4 #3 ， f ei1 b iao1 #1 ch ai2 y iou2 #2 y i4 b an1 #1 sh iii4 y iong4 #2 b ai2 y iou2 l iao4 #3 ch an1 d uei4 #3 z ou3 s ii1 #1 h ong2 y iou2 #4 。
+000181,j ing2 q van3 #2 x vn4 l ian4 #1 d a4 d uei4 #2 x ie2 q van3 #1 x vn2 j ian3 #4 。
+000182,g uang3 d ong1 sh eng3 #1 zh eng4 x ie2 #1 ch ang2 w uei3 #2 ch en2 z uan3 g uang1 #3 z ou3 j in4 #2 y i3 z u2 #1 j v1 s uo3 #4 。
+000183,zh u1 l ei4 #1 x ia4 l uo4 #2 q ing2 s a3 #1 k ong1 ch uang2 #4 。
+000184,q iang1 g uan3 #1 n ong4 q ing2 #2 ， l ing2 g e1 #1 f an4 y ie4 #3 ， x i1 x i1 #2 d iao4 s ou3 #1 l ian2 w ua2 #4 。
+000185,y iang2 h ong2 q van2 #2 sh iii4 #1 t ian2 b a4 zh en4 #2 w ua1 h ang1 c uen1 #1 c uen1 m in2 #4 。
+000186,z ai4 #1 sh iii1 g ong1 zh ong1 #3 w u2 f a3 y iong4 #1 h ang1 j i1 #1 n ian3 zh a2 #4 。
+000187,b ei1 t ie4 #3 、 f a3 t ie4 #3 、 z ii4 t ie4 #3 、 h ua4 t ie4 d e5 #1 t ie4 #3 y v3 #1 t ao1 t ie4 d e5 #1 t ie4 #2 d ou1 n ian4 t ie4 #4 。
+000188,m ei2 z uo4 x iang4 #2 y i4 w uei4 zh e5 #2 m ei2 j iao4 y iang3 #3 ， r u3 m o4 #1 z u3 z ong1 #4 。
+000189,w uen2 sh iii4 #2 y i3 #1 x i4 sh eng2 w uen2 #1 w uei2 zh u3 #3 ， h ai2 y iou3 #2 j iao1 c uo4 #1 sh eng2 w uen2 #3 、 x ian2 w uen2 #3 、 ch uo1 c ii4 w uen2 d eng3 #4 。
+000190,d ai3 t u2 m en5 #2 l uen1 zh e5 #1 g uan3 z ii5 #2 y iou4 d a3 #1 y iou4 c ii4 #3 ， j i2 y v2 #2 zh iii4 r en2 #1 y v2 s ii3 d i4 #4 。
+000191,d a4 g ua4 ch e1 #1 j ia4 sh iii3 y van2 #2 l iou2 w uei4 d ong1 #3 y iou4 j iao3 #2 b ei4 #1 s ii2 s ii2 #1 q ia3 zh u4 #2 w u2 f a3 #1 d ong4 t an5 #4 。
+000192,w uen1 l ing3 sh iii4 #2 l an2 k ong3 q ve4 #1 y iou4 sh iii1 #2 y ian2 y ian4 h ong2 d e5 #2 n ve4 t ong2 #1 x ing2 w uei2 #4 。
+000193,q ie2 y iou3 #2 q ve4 q ie4 #1 c ai2 l iao4 #1 w uei2 zh eng4 #4 。
+000194,j iou2 j ing3 #1 f a2 z ii3 #1 x i1 d u2 an4 #3 zh en4 j ing1 #1 y ian3 y i4 q van1 #4 。
+000195,h uan1 y ing2 #2 g e4 w uei4 #1 p eng2 y iou5 #2 ch ang2 l ai2 #1 g uang4 g uang5 #1 l iao2 l iao5 #4 。
+000196,l ao3 w uang2 #2 b ian1 k en3 #1 sh ao1 b ing3 #1 b ian1 sh uo1 #4 。
+000197,j ing3 f ang1 #2 k u2 k u3 #1 zh uei1 z ong1 #1 w uei4 m ou3 #4 。
+000198,l in2 z u3 l ian4 #2 r en4 #1 w u1 k an3 c uen1 #2 d ang2 z ong3 zh iii1 #1 sh u1 j i4 #4 。
+000199,t a1 #1 n ie4 sh ou3 #1 n ie4 j iao3 #1 j in4 l e5 w u1 #3 ， l iou1 j in4 #1 w uo4 sh iii4 #4 。
+000200,c ii3 w uen2 #1 j ing1 zh ai1 b ian1 #3 ， b iao1 t i2 w uei2 #2 b ian1 zh e3 #1 zh iii4 z uo4 #4 。
