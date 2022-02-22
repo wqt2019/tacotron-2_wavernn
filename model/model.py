@@ -6,7 +6,7 @@ from torch.autograd import Variable
 from torch.nn import functional as F
 from model.layers import ConvNorm, LinearNorm
 from utils.util import mode, get_mask_from_lengths
-
+import numpy as np
 
 class Tacotron2Loss(nn.Module):
 	def __init__(self):
@@ -26,7 +26,7 @@ class Tacotron2Loss(nn.Module):
 			nn.MSELoss()(p*mel_out_postnet, p*mel_target)
 		gate_loss = nn.BCEWithLogitsLoss(pos_weight=torch.tensor(hps.gate_positive_weight,
 														 device = gate_out.device))(gate_out, gate_target)
-		return mel_loss+gate_loss, (mel_loss/(p**2)+gate_loss).item()
+		return mel_loss+gate_loss, (mel_loss/(p**2)+gate_loss).item(),gate_loss
 
 
 class LocationLayer(nn.Module):
@@ -48,6 +48,73 @@ class LocationLayer(nn.Module):
 		return processed_attention
 
 
+class StepwiseMonotonicAttention(nn.Module):
+	"""
+    StepwiseMonotonicAttention (SMA)
+
+    This attention is described in:
+        M. He, Y. Deng, and L. He, "Robust Sequence-to-Sequence Acoustic Modeling with Stepwise Monotonic Attention for Neural TTS,"
+        in Annual Conference of the International Speech Communication Association (INTERSPEECH), 2019, pp. 1293-1297.
+        https://arxiv.org/abs/1906.00672
+
+    See:
+        https://gist.github.com/mutiann/38a7638f75c21479582d7391490df37c
+        https://github.com/keonlee9420/Stepwise_Monotonic_Multihead_Attention
+    """
+
+	def __init__(self, sigmoid_noise=2.0):
+		"""
+        Args:
+            sigmoid_noise: Standard deviation of pre-sigmoid noise.
+                           Setting this larger than 0 will encourage the model to produce
+                           large attention scores, effectively making the choosing probabilities
+                           discrete and the resulting attention distribution one-hot.
+        """
+		super(StepwiseMonotonicAttention, self).__init__()
+
+		self.alignment = None  # alignment in previous query time step
+		self.sigmoid_noise = sigmoid_noise
+
+	def init_attention(self, processed_memory):
+		# Initial alignment with [1, 0, ..., 0]
+		b, t, c = processed_memory.size()
+		self.alignment = processed_memory.new_zeros(b, t)
+		self.alignment[:, 0:1] = 1
+
+	def stepwise_monotonic_attention(self, p_i, prev_alignment):
+		"""
+        Compute stepwise monotonic attention
+            - p_i: probability to keep attended to the last attended entry
+            - Equation (8) in section 3 of the paper
+        """
+		pad = prev_alignment.new_zeros(prev_alignment.size(0), 1)
+		alignment = prev_alignment * p_i + torch.cat((pad, prev_alignment[:, :-1] * (1.0 - p_i[:, :-1])), dim=1)
+		return alignment
+
+	def get_selection_probability(self, e, std):
+		"""
+        Compute selecton/sampling probability `p_i` from energies `e`
+            - Equation (4) and the tricks in section 2.2 of the paper
+        """
+		# Add Gaussian noise to encourage discreteness
+		if self.training:
+			noise = e.new_zeros(e.size()).normal_()
+			e = e + noise * std
+
+		# Compute selecton/sampling probability p_i
+		# (batch, max_time)
+		return torch.sigmoid(e)
+
+	def get_probabilities(self, energies):
+		# Selecton/sampling probability p_i
+		p_i = self.get_selection_probability(energies, self.sigmoid_noise)
+		# Stepwise monotonic attention
+		alignment = self.stepwise_monotonic_attention(p_i, self.alignment)
+		# (batch, max_time)
+		self.alignment = alignment
+		return alignment
+
+
 class Attention(nn.Module):
 	def __init__(self, attention_rnn_dim, embedding_dim, attention_dim,
 				 attention_location_n_filters, attention_location_kernel_size):
@@ -61,6 +128,7 @@ class Attention(nn.Module):
 											attention_location_kernel_size,
 											attention_dim)
 		self.score_mask_value = -float('inf')
+		self.sma = StepwiseMonotonicAttention()
 
 	def get_alignment_energies(self, query, processed_memory,
 							   attention_weights_cat):
@@ -83,6 +151,14 @@ class Attention(nn.Module):
 		energies = energies.squeeze(-1)
 		return energies
 
+	def get_alignment_energies_basic(self, query, processed_memory):
+
+		processed_query = self.query_layer(query.unsqueeze(1))
+		energies = self.v(torch.tanh(processed_query + processed_memory))
+
+		energies = energies.squeeze(-1)
+		return energies
+
 	def forward(self, attention_hidden_state, memory, processed_memory,
 				attention_weights_cat, mask):
 		'''
@@ -94,12 +170,19 @@ class Attention(nn.Module):
 		attention_weights_cat: previous and cummulative attention weights
 		mask: binary mask for padded data
 		'''
-		alignment = self.get_alignment_energies(attention_hidden_state, processed_memory, attention_weights_cat)
 
+		######## lsa ###############################################################
+		# alignment = self.get_alignment_energies(attention_hidden_state, processed_memory, attention_weights_cat)
+		# attention_weights = F.softmax(alignment, dim=1)
+
+		######## sma ###############################################################
+		alignment = self.get_alignment_energies(attention_hidden_state,processed_memory)
+		alignment = self.sma.get_probabilities(alignment)
+		attention_weights = alignment  # sma
+
+		############################################################################
 		if mask is not None:
 			alignment.data.masked_fill_(mask, self.score_mask_value)
-
-		attention_weights = F.softmax(alignment, dim=1)
 		attention_context = torch.bmm(attention_weights.unsqueeze(1), memory)
 		attention_context = attention_context.squeeze(1)
 
@@ -221,6 +304,7 @@ class Encoder(nn.Module):
 class Decoder(nn.Module):
 	def __init__(self):
 		super(Decoder, self).__init__()
+		self.num_att_mixtures = 1 #hps.num_att_mixtures
 		self.num_mels = hps.num_mels
 		self.n_frames_per_step = hps.n_frames_per_step
 		self.encoder_embedding_dim = hps.encoder_embedding_dim
@@ -231,6 +315,8 @@ class Decoder(nn.Module):
 		self.gate_threshold = hps.gate_threshold
 		self.p_attention_dropout = hps.p_attention_dropout
 		self.p_decoder_dropout = hps.p_decoder_dropout
+		self.teacher_force_till = hps.teacher_force_till
+		self.p_teacher_forcing = hps.p_teacher_forcing
 
 		self.prenet = Prenet(
 			hps.num_mels * hps.n_frames_per_step,
@@ -296,6 +382,7 @@ class Decoder(nn.Module):
 		self.memory = memory
 		self.processed_memory = self.attention_layer.memory_layer(memory)
 		self.mask = mask
+
 
 	def parse_decoder_inputs(self, decoder_inputs):
 		''' Prepares decoder inputs, i.e. mel outputs
@@ -396,9 +483,16 @@ class Decoder(nn.Module):
 
 		self.initialize_decoder_states(memory, mask=~get_mask_from_lengths(memory_lengths))
 
+		self.attention_layer.sma.init_attention(self.processed_memory)
+
 		mel_outputs, gate_outputs, alignments = [], [], []
 		while len(mel_outputs) < decoder_inputs.size(0) - 1:
-			decoder_input = decoder_inputs[len(mel_outputs)]
+			# decoder_input = decoder_inputs[len(mel_outputs)]
+			if len(mel_outputs) <= self.teacher_force_till or np.random.uniform(0.0, 1.0) <= self.p_teacher_forcing:
+				decoder_input = decoder_inputs[len(mel_outputs)]  # use all-in-one processed output for next step
+			else:
+				decoder_input = self.prenet(mel_outputs[-1])  # use last output for next step (like inference)
+
 			mel_output, gate_output, attention_weights = self.decode(decoder_input)
 			mel_outputs += [mel_output.squeeze(1)]
 			gate_outputs += [gate_output.squeeze()]
@@ -423,6 +517,8 @@ class Decoder(nn.Module):
 
 		self.initialize_decoder_states(memory, mask=None)
 
+		self.attention_layer.sma.init_attention(self.memory)
+
 		mel_outputs, gate_outputs, alignments = [], [], []
 
 		while True:
@@ -434,15 +530,14 @@ class Decoder(nn.Module):
 			alignments += [alignment]
 
 			if torch.sigmoid(gate_output.data) > self.gate_threshold and len(mel_outputs)>10:
-				print('torch.sigmoid(gate_output.data):',torch.sigmoid(gate_output.data))
-				print('Terminated by gate.')
+				print('Terminated by gate.:',torch.sigmoid(gate_output.data)[0][0])
 				break
 			# elif len(mel_outputs) > 1 and is_end_of_frames(mel_output):
 			# 	print('torch.sigmoid(gate_output.data):', torch.sigmoid(gate_output.data))
 			# 	print('Warning: End with low power.')
 			# 	break
 			elif len(mel_outputs) == self.max_decoder_steps:
-				print('Warning: Reached max decoder steps.')
+				print('Warning: Reached max decoder steps.',self.max_decoder_steps)
 				break
 
 			decoder_input = mel_output
