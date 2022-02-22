@@ -176,7 +176,7 @@ class Attention(nn.Module):
 		# attention_weights = F.softmax(alignment, dim=1)
 
 		######## sma ###############################################################
-		alignment = self.get_alignment_energies(attention_hidden_state,processed_memory)
+		alignment = self.get_alignment_energies_basic(attention_hidden_state,processed_memory)
 		alignment = self.sma.get_probabilities(alignment)
 		attention_weights = alignment  # sma
 
