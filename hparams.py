@@ -37,7 +37,7 @@ class hparams:
 	magnitude_power = 2.
 	max_abs_value = 1.
 	fp16_run = True
-	warm_start = True
+	warm_start = False
 	ignore_layers = ['embedding.weight']
 
 	################################
@@ -62,7 +62,13 @@ class hparams:
 	grad_clip_thresh = 1.0
 	mask_padding = True
 	p = 10 # mel spec loss penalty
-	gate_positive_weight = 3 #default 1
+	gate_positive_weight = 20 #default 1
+	
+	# Teacher-forcing Config
+	p_teacher_forcing = 1.00,  # 1.00 baseline
+	teacher_force_till = 20,  # int, number of starting frames with teacher_forcing at 100%, helps with clips that have challenging starting conditions i.e breathing before the text begins.
+	val_p_teacher_forcing = 0.80,
+	val_teacher_force_till = 20,
 
 	################################
 	# Model Parameters             #
