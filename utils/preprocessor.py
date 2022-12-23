@@ -5,7 +5,6 @@ import torch
 import numpy as np
 from utils import audio
 
-silence_audio_size = 200 * 8
 
 def build_from_path_mydata(hparams, input_dir, mel_dir, linear_dir, wav_dir, n_jobs=12, tqdm=lambda x: x):
 
@@ -109,9 +108,6 @@ def _process_utterance(mel_dir, linear_dir, wav_dir, index, wav_path, text, hpar
 
 	if (hparams.preemphasize):
 		wav = audio.preemphasis(wav)
-
-	wav = np.append([0.] * silence_audio_size, wav)
-	wav = np.append(wav, [0.] * silence_audio_size)
 
 	#[-1, 1]
 	# out = wav
